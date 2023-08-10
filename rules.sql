@@ -1,0 +1,2 @@
+CREATE RULE dont_insert_plan_items AS ON INSERT TO plan_items DO INSTEAD NOTIFY plan_items, 'Dont insert plan_items';
+CREATE RULE dont_delete_plan_items AS ON DELETE TO plan_items DO INSTEAD NOTIFY plan_items, 'Dont insert plan_items';
